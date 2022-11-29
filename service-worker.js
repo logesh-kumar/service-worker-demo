@@ -1,5 +1,4 @@
 var cacheName = "viteapp";
-const l = console.log;
 /*
  * Once the service worker registration has succeeded and completed, the "install" event is fired.
  * At this stage any service worker previously installed will be in charge.
@@ -7,7 +6,7 @@ const l = console.log;
  * This event is fired when there is a change in the service worker file.
  */
 self.addEventListener("install", function (event) {
-  l("install evt");
+  console.log("install evt");
 });
 
 const putInCache = async (request, response) => {
